@@ -7,6 +7,7 @@
     ./desktop.nix
     ./sound.nix
     ./power-management.nix
+    ./programs.nix
   ];
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -42,45 +43,6 @@
     ];
   };
   users.defaultUserShell = pkgs.fish;
-
-  # Install firefox.
-  programs.firefox.enable = true;
-  programs.fish.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #  wget
-    libva-utils
-    vscode
-    planify
-    adw-gtk3
-    rustup
-    gnome-tweaks
-    nodejs_24
-    deno
-    htop
-    btop
-    nvtopPackages.amd
-    powertop
-    fastfetch
-    prettierd
-    showtime
-    gnome-extension-manager
-    gh
-    git
-    github-desktop
-    fira-code
-    nerd-fonts.fira-code
-    clang
-    clang-tools
-    nixfmt-rfc-style
-    nil
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
