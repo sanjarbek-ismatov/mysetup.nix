@@ -19,6 +19,7 @@
     deno
     htop
     btop-rocm
+    amdgpu_top
     nvtopPackages.amd
     powertop
     fastfetch
