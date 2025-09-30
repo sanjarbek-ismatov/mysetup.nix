@@ -18,7 +18,7 @@
     nodejs_24
     deno
     htop
-    btop
+    btop-rocm
     nvtopPackages.amd
     powertop
     fastfetch
@@ -28,7 +28,7 @@
     gh
     git
     github-desktop
-    folio
+    obsidian
     fira-code
     nerd-fonts.fira-code
     clang
