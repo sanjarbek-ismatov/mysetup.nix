@@ -1,12 +1,9 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  # Install firefox.
   programs.firefox.enable = true;
-  programs.fish.enable = true; 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  programs.fish.enable = true;
   environment.systemPackages = with pkgs; [
     neovim
     libva-utils
@@ -39,5 +36,13 @@
     papers
     resources
     authenticator
+    blanket
+    dialect
+    eyedropper
+    fragments
+    keypunch
+    share-preview
+    wike
+    wordbook
   ];
 }
