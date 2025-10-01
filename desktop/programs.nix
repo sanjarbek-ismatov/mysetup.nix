@@ -37,5 +37,7 @@
     nixfmt-rfc-style
     nil
     papers
+    resources
+    authenticator
   ];
 }
