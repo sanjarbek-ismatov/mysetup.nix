@@ -33,7 +33,6 @@
     clang-tools
     nixfmt-rfc-style
     nil
-    papers
     resources
     authenticator
     blanket

@@ -17,6 +17,5 @@
     pkgs.simple-scan
     pkgs.gnome-maps
     pkgs.totem
-    pkgs.evince
   ];
 }
